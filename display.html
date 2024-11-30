@@ -3,31 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
   <title>Food Information</title>
   <style>
     body {
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       margin: 50px;
       padding: 20px;
       background-image:url('img/veg.jpg');
       color: #333;
       border: 5px dashed black;
       border-radius: 10px;
-      width: 400px;
-      height: 400px;
+      width: 600px;
+      height: 600px;
       top: 10%;/*50*/
     left: 30%;
     position: absolute;
       
     }
-    h1 {
+    h2 {
       color: #2c3e50;
       background-color:paleturquoise;
     }
     .info {
         width: 300px;
-        height: 230px;
+        height: 300px;
       padding: 45px;
+      margin: 80px;
       background-color:palegreen;
       border: 5px double black ;
       border-radius: 10px;
@@ -38,15 +40,19 @@
   </style>
 </head>
 <body>
-  <center><h1>Food Information</h1></center>
+  <center><h2>Organic food traceability system - Food Information</h2></center>
+
   <div class="info">
     <p><strong>Type of food:</strong> <span id="type"></span></p>
     <p><strong>Code:</strong> <span id="code"></span></p>
     <p><strong>Food Name:</strong> <span id="name"></span></p>
     <p><strong>Varieties:</strong> <span id="varr"></span></p>
-    <p><strong>Product Origin:</strong> <span id="ori"></span></p>
+    <p><strong>Product Origin:</strong> <span id="ori"></span></p><br>
+    <button class="button-83" type="button" onclick="location.href='https://coocoonutn.github.io/organicFYPfood.github.io/index.html'">
+      Want to view more? Click here!!
+    </button>
   </div>
-
+   
   <script>
     // Function to read query parameters
     function getQueryParams() {
